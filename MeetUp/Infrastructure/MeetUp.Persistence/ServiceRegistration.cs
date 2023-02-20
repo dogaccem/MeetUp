@@ -21,7 +21,7 @@ namespace MeetUp.Persistence
             //services.AddDbContext<MeetUpAppDbContext>(options => options.UseSqlServer(@"Server=TR-ADN-FHJ9TT2;
             //                                          Database=MeetUpDb;Trusted_Connection=True;Encrypt=false;TrustServerCertificate=true;"));
 
-            services.AddDbContext<MeetUpAppDbContext>(options => options.UseSqlServer(@"Server=sql_server;Database=MeetUpDb;User Id=SA;Password=yourStrong(!)Password;MultipleActiveResultSets=true"));
+            services.AddDbContext<MeetUpAppDbContext>(options => options.UseSqlServer(@"Server=localhost,1433;Database=MeetUpDb;User Id=SA;Password=yourStrong(!)Password;MultipleActiveResultSets=true;Encrypt=False"));
 
             
 
