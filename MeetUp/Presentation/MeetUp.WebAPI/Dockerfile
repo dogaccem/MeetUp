@@ -24,3 +24,6 @@ FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "MeetUp.WebAPI.dll"]
+
+ENV CURLOPT_SSL_VERIFYHOST=0
+ENV CURLOPT_SSL_VERIFYPEER=0

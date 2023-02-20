@@ -4,7 +4,7 @@ import FormControlLabel from "@mui/material/FormControlLabel";
 import { Switch as MuiSwitch } from "@mui/material";
 
 export default function Switch() {
-  const dotNet = "https://localhost:7163";
+  const dotNet = "http://localhost:7163";
   const nodeJs = "http://localhost:8080";
 
   const [switchState, setSwitchState] = React.useState(
